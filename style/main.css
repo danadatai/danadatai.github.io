@@ -1,7 +1,7 @@
 html {
   font-family: 'Inter';
 	overflow: hidden;
-	
+
 	background: #FEFCFA;
 }
 
@@ -12,12 +12,12 @@ p {
 	padding: 0;
 }
 
-.profile {
+.container {
 	position: absolute;
 	width: 1184px;
 	left: calc(50% - 1184px/2);
 	top: 20%;
-	
+
 	display: flex;
 	flex-direction: row;
 }
@@ -26,24 +26,24 @@ p {
 	display: flex;
 	flex-direction: column;
 	padding: 24px 16px;
-	
+
 	width: 320px;
 	//height: 420px;
-	
+
 	//background: #f2f2f2;
 }
 
 .profileImage {
 	position: static;
-	
+
 	width: 160px;
 	height: 184px;
-	
+
 	flex: none;
 	order: 0;
 	align-self: center;
 	margin-bottom: 24px;
-	
+
 	//background: #969696;
 }
 
@@ -52,33 +52,33 @@ p {
 	flex-direction: row;
 	padding: 32px 16px;
 	margin-left: 64px;
-	
+
 	width: 768px;
 	height: 296px;
-	
+
 	//background: #f2f2f2;
 }
 
 .profileLinks-mobile {
 	width: 320px;
-	
+
 	display: none;
 	flex-direction: column;
 	padding: 64px 16px;
 	margin-left: 64px;
-	
+
 	//background: #f2f2f2;
 }
 
 .linksRow {
 	position: static;
-	
+
 	display: flex;
 	flex-direction: row;
-	
+
 	flex: none;
 	align-self: center;
-	
+
 	margin-bottom: 16px;
 }
 
@@ -104,7 +104,7 @@ p {
 .behance {
 	background: #0071B9;
 	box-shadow: 0px 2px 8px rgba(0, 113, 185, 0.2);
-	
+
 	flex: none;
 	order: 3;
 	align-self: center;
@@ -113,7 +113,7 @@ p {
 .linkedin {
 	background: #0084B1;
 	box-shadow: 0px 2px 8px rgba(0, 132, 177, 0.2);
-	
+
 	flex: none;
 	order: 0;
 	align-self: center;
@@ -122,7 +122,7 @@ p {
 .medium {
 	background: #414141;
 	box-shadow: 0px 2px 8px rgba(65, 65, 65, 0.2);
-	
+
 	flex: none;
 	order: 2;
 	align-self: center;
@@ -131,7 +131,7 @@ p {
 .dribbble {
 	background: #ED4989;
 	box-shadow: 0px 2px 8px rgba(237, 73, 137, 0.2);
-	
+
 	flex: none;
 	order: 1;
 	align-self: center;
@@ -147,8 +147,8 @@ p {
 	height: 56px;
 	left: 24px;
 	top: 24px;
-	
-	background: #969696;	
+
+	background: #969696;
 }
 
 .cardLogo-mobile {
@@ -157,22 +157,22 @@ p {
 	height: 40px;
 	left: 20px;
 	top: 20px;
-	
-	background: #969696;	
+
+	background: #969696;
 }
 
 .cardTitle {
 	position: relative;
 	left: 24px;
 	top: 80px;
-			
+
 	width: 120px;
 
 	font-family: Inter;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 40px;
-	
+
 	display: flex;
 	font-style: normal;
 	align-items: center;
@@ -180,7 +180,7 @@ p {
 	text-indent: 2px;
 	text-transform: capitalize;
 	font-feature-settings: 'case' on, 'cpsp' on;
-	
+
 	color: rgba(255, 255, 255, 0.9);
 }
 
@@ -189,9 +189,9 @@ p {
 	height: 40px;
 	left: 20px;
 	top: 36px;
-		
-	width: 96px; 
-	
+
+	width: 96px;
+
 	font-family: Inter;
 	font-style: normal;
 	font-weight: 600;
@@ -212,7 +212,7 @@ p {
 	position: relative;
 	left: 24px;
 	top: 80px;
-	
+
 	width: 120px;
 
 	font-family: Inter;
@@ -220,7 +220,7 @@ p {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 24px;
-	
+
 	display: flex;
 	align-items: center;
 	letter-spacing: 0.04em;
@@ -235,7 +235,7 @@ p {
 	position: static;
 	width: 288px;
 	height: 60px;
-			
+
 	font-family: Inter;
 	font-style: normal;
 	font-weight: 500;
@@ -254,12 +254,12 @@ p {
 	position: static;
 	display: flex;
 	flex-direction: column;
-	
+
 	flex: none;
 	order: 1;
 	align-self: center;
 	margin-bottom: 24px;
-	
+
 	//background: #a1a1a1;
 }
 
@@ -268,20 +268,20 @@ p {
 	order: 1;
 	text-align: center;
 	margin: auto;
-	
+
 	position: static;
 	width: 288px;
 	height: 32px;
-	
+
 	font-family: Inter;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 32px;
-	
+
 	//background: #FEFCFA;
 	color: rgba(134, 140, 144, 0.9);
-	
+
 }
 
 .btnContacts {
@@ -292,22 +292,24 @@ p {
 	position: static;
 	width: 194px;
 	height: 48px;
-	
+
 	background: #FEFCFA;
 	border: 1px solid rgba(134, 140, 144, 0.6);
 	box-sizing: border-box;
 	box-shadow: 0px 1px 6px rgba(134, 140, 144, 0.15);
 	border-radius: 16px;
-	
+
 	flex: none;
 	order: 2;
 	align-self: center;
 	//margin-bottom: 24px;
+
+  transition: all .2s ease-in-out !important;
 }
 
 .btnIcon {
 	height: 24px;
-	
+
 	flex: none;
 	order: 0;
 	align-self: center;
@@ -318,7 +320,7 @@ p {
 	position: static;
 	height: 24px;
 	margin-left: 12px;
-	
+
 	font-family: Inter;
 	font-style: normal;
 	font-weight: normal;
@@ -334,7 +336,7 @@ p {
 	flex: none;
 	order: 1;
 	align-self: center;
-	
+
 	color: rgba(134, 140, 144, 0.6);
 }
 
@@ -342,12 +344,10 @@ p {
   color: rgba(134, 140, 144, 0.8);
   text-decoration: none;
   cursor: pointer;
-	
+
 	border: 1px solid rgba(134, 140, 144, 0.8);
 	box-sizing: border-box;
 	box-shadow: 0px 2px 9px rgba(134, 140, 144, 0.3);
-	
-	transition: all .2s ease-in-out !important;
 }
 
 .btnContacts:focus {
@@ -367,40 +367,66 @@ p {
   background: rgba(51, 51, 51, 0.25);
 }
 
+/* Modal content div animation example */
+@keyframes modal_motion {
+  0%   {background: rgba(254, 252, 250, 0); top: 20%;}
+  25%  {background: rgba(254, 252, 250, 0.2); top: 22%;}
+  50%  {background: rgba(254, 252, 250, 0.6); top: 24%;}
+  100% {background: rgba(254, 252, 250, 1.0); top: 26%;}
+}
+
+@keyframes modal_opacity {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0.4;}
+  100% {opacity: 1.0;}
+}
+
 .modal-content {
   position: relative;
 	display: flex;
 	flex-direction: column;
-	
+
 	width: 360px;
 	//height: 272px;
-	top: 25%;
-		
+	top: 26%;
+
+
   margin: auto;
-  padding: 48px 64px; 
-	
+  padding: 48px 64px;
+
 	box-shadow: 0px 3px 12px rgba(51, 51, 51, 0.15);
-	border-radius: 12px;	
-	background: #fefcfa;
+	border-radius: 12px;
+	background: rgba(254, 252, 250, 1.0);
+
+  animation-name: modal_motion;
+  animation-duration: .215s;
+  animation-timing-function: ease-out;
+  //animation-delay: 2s;
+  //animation-iteration-count: infinite;
 }
 
 .modal-close {
   width: 32px;
 	height: 32px;
-		
+
 	position: absolute;
 	right: 24px;
 	top: 24px;
 	flex: none;
-	
+
 	display: flex;
 	align-items: center;
-			
-	//background: #f2f2f2;	
 }
 
 .modal-close-icon {
 	margin: auto;
+
+  transition: all .2s ease-in-out !important;
+}
+
+.modal-close-icon:hover {
+	filter: invert(59%) sepia(9%) saturate(219%) hue-rotate(161deg) brightness(92%) contrast(81%);
 }
 
 .modal-title {
@@ -467,11 +493,20 @@ p {
 	align-self: center;
 }
 
+/* Opacity animation for modal contents*/
+.modal {
+  animation-name: modal_opacity;
+  animation-duration: .215s;
+  animation-timing-function: ease-out;
+  //animation-delay: 2s;
+  //animation-iteration-count: infinite;
+}
+
 .modal-contacts {
 	display: flex;
 	flex-direction: column;
 	padding: 0px;
-	
+
 	//background: #f50505;
 	margin: 0px;
 }
@@ -479,9 +514,9 @@ p {
 .modal-contacts-line {
 	display: flex;
 	flex-direction: row;
-	
+
 	height: 24px;
-		
+
 	//background: #f2f2f2;
 }
 
@@ -528,6 +563,7 @@ p {
 	align-items: center;
 	letter-spacing: 0.04em;
 	font-feature-settings: 'case' on, 'cpsp' on;
+  text-decoration: none;
 
 	flex: none;
 	order: 2;
@@ -535,22 +571,29 @@ p {
 	margin-left: 12px;
 
 	color: #49BAF2;
+
+  transition: all .2s ease-in-out !important;
+}
+
+.modalContacts-link:hover, .modalContacts-link:active {
+  color: #0071B9;
+
 }
 
 @media all and (max-width: 1300px) {
 	.profileLinks-default {
 		display: none;
   }
-	
+
 	.profileLinks-mobile {
 		display: flex;
 	}
-	
+
 	.cardMargin {
-		margin-left: 16px;	
+		margin-left: 16px;
 	}
-	
-	.profile {
+
+	.container {
 	width: 704px;
 	left: calc(50% - 704px/2);
 	//top: 20%;
@@ -563,12 +606,11 @@ p {
 		margin-top: 16px;
 		padding: 24px 16px;
 	}
-	
-	.profile {
+
+	.container {
 	width: 320px;
-	left: calc(50% - 320px/2);
-	top: 5%;
-		
-	flex-direction: column;	
+  left: calc(50% - 352px/2); /* 32px unknown diff */
+	top: 4%;
+	flex-direction: column;
 	}
 }
