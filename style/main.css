@@ -600,7 +600,11 @@ p {
 }
 
 @media all and (max-width: 760px) {
-	.profileLinks-mobile {
+  html {
+    overflow: auto;
+  }
+
+  .profileLinks-mobile {
 		margin-left: 0;
 		margin-top: 16px;
 		padding: 24px 16px;
@@ -616,6 +620,10 @@ p {
 
 /* Modal layout for mobile devices */
 @media all and (max-width: 540px) {
+  html {
+    overflow: auto;
+  }
+
   .modal-content {
     width: 80%;
     padding: 32px 24px;
