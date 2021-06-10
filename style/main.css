@@ -148,7 +148,7 @@ p {
 	left: 24px;
 	top: 24px;
 
-	background: #969696;
+	//background: #969696;
 }
 
 .cardLogo-mobile {
@@ -158,7 +158,7 @@ p {
 	left: 20px;
 	top: 20px;
 
-	background: #969696;
+	//background: #969696;
 }
 
 .cardTitle {
@@ -388,9 +388,7 @@ p {
 	flex-direction: column;
 
 	width: 360px;
-	//height: 272px;
 	top: 26%;
-
 
   margin: auto;
   padding: 48px 64px;
@@ -400,6 +398,15 @@ p {
 	background: rgba(254, 252, 250, 1.0);
 
   animation-name: modal_motion;
+  animation-duration: .215s;
+  animation-timing-function: ease-out;
+  //animation-delay: 2s;
+  //animation-iteration-count: infinite;
+}
+
+/* Opacity animation for modal contents*/
+.modal {
+  animation-name: modal_opacity;
   animation-duration: .215s;
   animation-timing-function: ease-out;
   //animation-delay: 2s;
@@ -421,12 +428,15 @@ p {
 
 .modal-close-icon {
 	margin: auto;
-
   transition: all .2s ease-in-out !important;
 }
 
-.modal-close-icon:hover {
+.modal-close-icon:hover,
+.modal-close-icon:focus {
 	filter: invert(59%) sepia(9%) saturate(219%) hue-rotate(161deg) brightness(92%) contrast(81%);
+
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-title {
@@ -466,13 +476,12 @@ p {
 
 	flex: none;
 	order: 0;
-	//align-self: flex-start;
 }
 
 .modalText-subtitle {
 	width: 360px;
 	height: 32px;
-	left: 0px;
+	//left: 0px;
 	//top: 64px;
 
 	font-family: Inter;
@@ -490,16 +499,6 @@ p {
 
 	flex: none;
 	order: 1;
-	align-self: center;
-}
-
-/* Opacity animation for modal contents*/
-.modal {
-  animation-name: modal_opacity;
-  animation-duration: .215s;
-  animation-timing-function: ease-out;
-  //animation-delay: 2s;
-  //animation-iteration-count: infinite;
 }
 
 .modal-contacts {
@@ -594,9 +593,9 @@ p {
 	}
 
 	.container {
-	width: 704px;
-	left: calc(50% - 704px/2);
-	//top: 20%;
+    width: 704px;
+	  left: calc(50% - 704px/2);
+	  //top: 20%;
 	}
 }
 
@@ -608,9 +607,48 @@ p {
 	}
 
 	.container {
-	width: 320px;
-  left: calc(50% - 352px/2); /* 32px unknown diff */
-	top: 4%;
-	flex-direction: column;
+	  width: 320px;
+    left: calc(50% - 352px/2); /* 32px unknown diff */
+	  top: 4%;
+	  flex-direction: column;
 	}
+}
+
+/* Modal layout for mobile devices */
+@media all and (max-width: 540px) {
+  .modal-content {
+    width: 80%;
+    padding: 32px 24px;
+    align-items: center;
+  }
+
+  .modal-title {
+  	width: auto;
+    margin-bottom: 24px;
+  }
+
+  .modalText-name {
+  	//position: static;
+  	width: auto;
+  	height: auto;
+
+  	font-family: Inter;
+  	font-style: normal;
+  	font-weight: 500;
+  	font-size: 44px;
+  	line-height: 56px;
+  }
+
+  .modalText-subtitle {
+    width: auto;
+    height: auto;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .modal-close,
+  .modalContacts-text {
+    display: none;
+  }
 }
